@@ -1,3 +1,9 @@
+---
+title: 'Claude Code 配置指南'
+description: 'Claude Code 配置指南'
+pubDate: 'Jul 15 2026'
+heroImage: '../../assets/blog-placeholder-4.jpg'
+---
 # Claude Code 配置指南
 
 本指南介绍如何在 Claude Code 中以用户级别配置 QVeris MCP 服务器和技能。

@@ -1,3 +1,10 @@
+---
+title: 'QVeris MCP Server Documentation'
+description: 'QVeris MCP Server Documentation'
+pubDate: 'Jul 15 2026'
+heroImage: '../../assets/blog-placeholder-4.jpg'
+---
+
 # QVeris MCP Server Documentation
 
 ## What it is

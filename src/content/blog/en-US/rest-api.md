@@ -1,3 +1,10 @@
+---
+title: 'QVeris REST API Documentation'
+description: 'QVeris REST API Documentation'
+pubDate: 'Jul 15 2026'
+heroImage: '../../assets/blog-placeholder-4.jpg'
+---
+
 # QVeris REST API Documentation
 
 Version: 0.1.9

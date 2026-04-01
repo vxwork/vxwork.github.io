@@ -1,3 +1,9 @@
+---
+title: 'QVeris 文档'
+description: 'QVeris 文档'
+pubDate: 'Jul 15 2026'
+heroImage: '../../assets/blog-placeholder-4.jpg'
+---
 # QVeris 文档
 
 ## 什么是 QVeris

@@ -1,3 +1,9 @@
+---
+title: 'OpenCode 配置指南'
+description: 'OpenCode 配置指南'
+pubDate: 'Jul 15 2026'
+heroImage: '../../assets/blog-placeholder-4.jpg'
+---
 # OpenCode 配置指南
 
 本指南介绍如何在 [OpenCode](https://opencode.ai/) 中以用户级别配置 QVeris MCP 服务器和技能。

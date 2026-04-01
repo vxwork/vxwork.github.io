@@ -1,3 +1,9 @@
+---
+title: 'QVeris Documentation'
+description: 'QVeris Documentation'
+pubDate: 'Jul 15 2026'
+heroImage: '../../assets/blog-placeholder-4.jpg'
+---
 # QVeris Documentation
 
 ## What is QVeris
