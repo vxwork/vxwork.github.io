@@ -2,7 +2,7 @@
 title: 'Configuration Guide for OpenCode'
 description: 'Configuration Guide for OpenCode'
 pubDate: 'Jul 15 2026'
-heroImage: '../../../assets/blog-placeholder-4.jpg'
+heroImage: '../../../assets/blog-placeholder-about.jpg'
 ---
 # Configuration Guide for OpenCode
 

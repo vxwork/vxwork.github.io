@@ -2,7 +2,7 @@
 title: 'Claude Code 配置指南'
 description: 'Claude Code 配置指南'
 pubDate: 'Jul 15 2026'
-heroImage: '../../../assets/blog-placeholder-4.jpg'
+heroImage: '../../../assets/blog-placeholder-about.jpg'
 ---
 # Claude Code 配置指南
 

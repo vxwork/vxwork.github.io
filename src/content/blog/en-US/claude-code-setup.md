@@ -2,7 +2,7 @@
 title: 'Configuration Guide for Claude Code'
 description: 'Configuration Guide for Claude Code'
 pubDate: 'Jul 15 2026'
-heroImage: '../../../assets/blog-placeholder-4.jpg'
+heroImage: '../../../assets/blog-placeholder-about.jpg'
 ---
 # Configuration Guide for Claude Code
 

@@ -2,7 +2,7 @@
 title: 'QVeris REST API Documentation'
 description: 'QVeris REST API Documentation'
 pubDate: 'Jul 15 2026'
-heroImage: '../../../assets/blog-placeholder-4.jpg'
+heroImage: '../../../assets/blog-placeholder-about.jpg'
 ---
 
 # QVeris REST API Documentation

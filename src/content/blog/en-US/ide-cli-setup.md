@@ -2,7 +2,7 @@
 title: 'IDE and CLI Configuration Guide'
 description: 'IDE and CLI Configuration Guide'
 pubDate: 'Jul 15 2026'
-heroImage: '../../../assets/blog-placeholder-4.jpg'
+heroImage: '../../../assets/blog-placeholder-about.jpg'
 ---
 # IDE and CLI Configuration Guide
 

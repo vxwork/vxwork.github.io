@@ -2,7 +2,7 @@
 title: 'QVeris Documentation'
 description: 'QVeris Documentation'
 pubDate: 'Jul 15 2026'
-heroImage: '../../../assets/blog-placeholder-4.jpg'
+heroImage: '../../../assets/blog-placeholder-about.jpg'
 ---
 # QVeris Documentation
 
