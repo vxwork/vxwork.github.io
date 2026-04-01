@@ -2,7 +2,7 @@
 title: 'OpenCode 配置指南'
 description: 'OpenCode 配置指南'
 pubDate: 'Jul 15 2026'
-heroImage: '../../assets/blog-placeholder-4.jpg'
+heroImage: '../../../assets/blog-placeholder-4.jpg'
 ---
 # OpenCode 配置指南
 
