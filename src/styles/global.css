@@ -5,17 +5,24 @@
  */
 
 :root {
-	/* 颜色变量尽量对齐 qveris-website（Apple 风格配色） */
+	/* 颜色变量对齐 `qveris-website`：暗色营销配色（Apple 风格高对比） */
 	--accent: #1c63fc;
 	--accent-dark: #0077ed;
-	--black: 29, 29, 31;
-	--gray: 66, 66, 69; /* 正文二级 */
-	--gray-light: 245, 245, 247; /* 表面色 */
-	--gray-dark: 29, 29, 31; /* 主文字 */
-	--gray-gradient: rgba(var(--gray-light), 55%), #ffffff;
+
+	/* 文本层级：primary / secondary / surface */
+	--black: 245, 245, 247; /* 标题 */
+	--gray-dark: 245, 245, 247; /* 主文字 */
+	--gray: 190, 190, 200; /* 正文二级（日期/页脚） */
+	--gray-light: 8, 17, 28; /* 表面色（代码块/分隔线） */
+
+	/* Footer 背景渐变 */
+	--gray-gradient: rgba(255, 255, 255, 0.06), rgba(5, 7, 11, 0);
+
+	/* 暗色背景下的更“贴底”的阴影 */
 	--box-shadow:
-		0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
-		0 16px 32px rgba(var(--gray), 33%);
+		0 2px 10px rgba(0, 0, 0, 0.45),
+		0 10px 30px rgba(0, 0, 0, 0.35),
+		0 20px 60px rgba(0, 0, 0, 0.25);
 }
 @font-face {
 	font-family: "Atkinson";
@@ -38,7 +45,10 @@ body {
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	background: rgb(var(--gray-light));
+	background:
+		radial-gradient(circle at 14% 0%, rgba(52, 227, 244, 0.08), transparent 26%),
+		radial-gradient(circle at 82% 10%, rgba(47, 67, 255, 0.12), transparent 30%),
+		linear-gradient(180deg, #05070b 0%, #08111a 42%, #05070b 100%);
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	color: rgb(var(--gray-dark));
@@ -109,12 +119,14 @@ img {
 }
 code {
 	padding: 2px 5px;
-	background-color: rgb(var(--gray-light));
-	border-radius: 2px;
+	background-color: rgba(255, 255, 255, 0.06);
+	border-radius: 4px;
 }
 pre {
 	padding: 1.5em;
 	border-radius: 8px;
+	background: rgba(255, 255, 255, 0.02);
+	border: 1px solid rgba(255, 255, 255, 0.06);
 }
 pre > code {
 	all: unset;
@@ -127,7 +139,7 @@ blockquote {
 }
 hr {
 	border: none;
-	border-top: 1px solid rgb(var(--gray-light));
+	border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 @media (max-width: 720px) {
 	body {
