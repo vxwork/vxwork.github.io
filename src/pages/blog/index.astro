@@ -5,20 +5,31 @@ import BaseHead from '../../components/BaseHead.astro';
 import Footer from '../../components/Footer.astro';
 import FormattedDate from '../../components/FormattedDate.astro';
 import Header from '../../components/Header.astro';
-import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
+import LanguageToggle from '../../components/LanguageToggle.astro';
+import { getSiteMeta, normalizeLang, type Lang } from '../../i18n';
 
-const posts = (await getCollection('blog')).sort(
-	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
-);
+const embed =
+	Astro.url.searchParams.get('embed') === '1' || Astro.url.searchParams.get('embed') === 'true';
+const lang = normalizeLang(Astro.url.searchParams.get('lang')) as Lang;
+
+const { title: siteTitle, description: siteDescription } = getSiteMeta(lang);
+const otherLang = lang === 'en-US' ? 'zh-CN' : 'en-US';
+const otherLangHref = `/blog?lang=${otherLang}` + (embed ? '&embed=1' : '');
+
+const posts = (await getCollection('blog'))
+	.filter((post) => normalizeLang(post.id.split('/')[0]) === lang)
+	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
 	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<BaseHead title={siteTitle} description={siteDescription} />
 		<style>
-			main {
-				width: 960px;
+			.lang-toggle-row {
+				margin: 1rem 0;
+				display: flex;
+				justify-content: center;
 			}
 			ul {
 				display: flex;
@@ -86,21 +97,26 @@ const posts = (await getCollection('blog')).sort(
 			}
 		</style>
 	</head>
-	<body>
-		<Header />
+	<body class={embed ? 'embed' : undefined}>
+		{!embed && <Header lang={lang} />}
 		<main>
 			<section>
+				{otherLangHref && (
+					<div class="lang-toggle-row">
+						<LanguageToggle currentLang={lang} otherLangHref={otherLangHref} />
+					</div>
+				)}
 				<ul>
 					{
 						posts.map((post) => (
 							<li>
-								<a href={`/blog/${post.id}/`}>
+								<a href={`/blog/${post.id}/` + (embed ? '?embed=1' : '')}>
 									{post.data.heroImage && (
 										<Image width={720} height={360} src={post.data.heroImage} alt="" />
 									)}
 									<h4 class="title">{post.data.title}</h4>
 									<p class="date">
-										<FormattedDate date={post.data.pubDate} />
+										<FormattedDate lang={lang} date={post.data.pubDate} />
 									</p>
 								</a>
 							</li>

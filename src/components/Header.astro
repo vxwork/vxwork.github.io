@@ -1,20 +1,27 @@
 ---
-import { SITE_TITLE } from '../consts';
+import { t, type Lang, getSiteMeta } from '../i18n';
 import HeaderLink from './HeaderLink.astro';
+
+interface Props {
+	lang?: Lang;
+}
+
+const { lang = 'en-US' } = Astro.props;
+const { title: siteTitle } = getSiteMeta(lang);
 ---
 
 <header>
 	<nav>
-		<h2><a href="/">{SITE_TITLE}</a></h2>
+		<h2><a href="/">{siteTitle}</a></h2>
 		<div class="internal-links">
-			<HeaderLink href="/">Home</HeaderLink>
-			<HeaderLink href="/blog">Blog</HeaderLink>
-			<HeaderLink href="/about">About</HeaderLink>
+			<HeaderLink href="/">{t(lang, 'navHome')}</HeaderLink>
+			<HeaderLink href={`/blog?lang=${lang}`}>{t(lang, 'navBlog')}</HeaderLink>
+			<HeaderLink href={`/about?lang=${lang}`}>{t(lang, 'navAbout')}</HeaderLink>
 		</div>
 		<div class="social-links">
 			
 			<a href="https://github.com/QverisAI" target="_blank">
-				<span class="sr-only">Go to QVeris AI's GitHub repo</span>
+				<span class="sr-only">{t(lang, 'goToGithubRepo')}</span>
 				<svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32"
 					><path
 						fill="currentColor"
