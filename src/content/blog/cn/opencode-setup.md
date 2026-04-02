@@ -104,3 +104,4 @@ OpenCode 的 Agent 会自动发现 QVeris 技能和 MCP 服务器，找到并执
 
 **Windows 问题：**
 - 如果 `npx` 失败，请尝试使用完整路径或确保 Node.js 已添加到 PATH
+

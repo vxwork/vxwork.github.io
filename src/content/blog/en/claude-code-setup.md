@@ -84,3 +84,4 @@ Write a python script that prints the current bitcoin price using @.claude/skill
 **Windows Issues:**
 - Ensure you're using `cmd /c` wrapper for stdio servers with `npx`
 - Check that Node.js is in your PATH
+

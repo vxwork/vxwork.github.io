@@ -326,3 +326,4 @@ QVeris 的核心引擎是托管服务。所有客户端工具（MCP 服务器、
 - **ClawHub 技能**：[clawhub.ai/skills?q=qveris](https://clawhub.ai/skills?sort=downloads&q=qveris)
 - **npm 包**：[@qverisai](https://www.npmjs.com/org/qverisai)
 - **上游贡献**：[openclaw/openclaw](https://github.com/openclaw/openclaw)、[openclaw/clawhub](https://github.com/openclaw/clawhub)
+

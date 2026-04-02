@@ -104,3 +104,4 @@ OpenCode's agent will automatically discover the QVeris skill and MCP server to 
 
 **Windows Issues:**
 - If `npx` fails, try using the full path or ensure Node.js is in your PATH
+

@@ -1,14 +1,11 @@
 ---
-import type { Lang } from '../i18n';
-
 interface Props {
 	date: Date;
-	lang?: Lang;
+	lang?: 'en' | 'cn';
 }
 
-const { date, lang = 'en-US' } = Astro.props;
-
-const locale = lang === 'zh-CN' ? 'zh-CN' : 'en-US';
+const { date, lang = 'en' } = Astro.props;
+const locale = lang === 'cn' ? 'zh-CN' : 'en-US';
 ---
 
 <time datetime={date.toISOString()}>

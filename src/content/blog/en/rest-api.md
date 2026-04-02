@@ -137,7 +137,7 @@ Status Code: 200 OK
 | description | string | Yes | Detailed description of tool functionality |
 | provider_name | string | No | Name of the tool provider |
 | provider_description | string | No | Description of the provider |
-| region | string | No | Region of the tool. "global" for global tools, "\|" separated whitelist (e.g. "US\|CA") or blacklist (e.g. "-CN\|RU") of country codes for regional tools |
+| region | string | No | Region of the tool. "global" for global tools, "|" separated whitelist (e.g. "US|CA") or blacklist (e.g. "-CN|RU") of country codes for regional tools |
 | params | array | No | Array of parameter definitions |
 | examples | object | No | Usage examples |
 | stats | object | No | Historical execution performance statistics |
@@ -510,7 +510,7 @@ You can then use below system prompt and start testing! Have fun exploring!
 ```javascript
 {
   role: 'system',
-  content: 'You are a helpful assistant that can dynamically discover and call capabilities to help the user. First think about what kind of capabilities might be useful to accomplish the user\'s task. Then use the search_tools tool with a query describing the capability, not the specific parameters you will pass later. Then call suitable capabilities using the execute_tool tool, passing parameters through params_to_tool. If a capability has success_rate and avg_execution_time (in seconds), consider them when selecting which to call. You can reference the examples given for each capability. You can make multiple tool calls in a single response.',
+  content: 'You are a helpful assistant that can dynamically discover and call capabilities to help the user. First think about what kind of capabilities might be useful to accomplish the user\\'s task. Then use the search_tools tool with a query describing the capability, not the specific parameters you will pass later. Then call suitable capabilities using the execute_tool tool, passing parameters through params_to_tool. If a capability has success_rate and avg_execution_time (in seconds), consider them when selecting which to call. You can reference the examples given for each capability. You can make multiple tool calls in a single response.',
 }
 
 ```

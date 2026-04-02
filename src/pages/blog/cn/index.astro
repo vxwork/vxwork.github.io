@@ -1,18 +1,18 @@
 ---
 import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
-import BaseHead from '../../components/BaseHead.astro';
-import Footer from '../../components/Footer.astro';
-import FormattedDate from '../../components/FormattedDate.astro';
-import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
+import BaseHead from '../../../components/BaseHead.astro';
+import Footer from '../../../components/Footer.astro';
+import FormattedDate from '../../../components/FormattedDate.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../../../consts';
 
 const posts = (await getCollection('blog'))
-	.filter((post) => post.id.startsWith('en/'))
+	.filter((post) => post.id.startsWith('cn/'))
 	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
@@ -95,7 +95,7 @@ const posts = (await getCollection('blog'))
 									)}
 									<h4 class="title">{post.data.title}</h4>
 									<p class="date">
-										<FormattedDate lang="en" date={post.data.pubDate} />
+										<FormattedDate lang="cn" date={post.data.pubDate} />
 									</p>
 								</a>
 							</li>
@@ -107,3 +107,4 @@ const posts = (await getCollection('blog'))
 		<Footer />
 	</body>
 </html>
+

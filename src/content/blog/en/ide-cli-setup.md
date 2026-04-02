@@ -37,3 +37,4 @@ For OpenCode:
 ```
 Configure this for me https://github.com/QVerisAI/QVerisAI/blob/main/docs/opencode-setup.md. The API key is sk-xxxxxxxxxxxxx
 ```
+

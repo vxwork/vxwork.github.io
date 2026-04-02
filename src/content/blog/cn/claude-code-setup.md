@@ -84,3 +84,4 @@ Write a python script that prints the current bitcoin price using @.claude/skill
 **Windows 问题：**
 - 确保在 stdio 服务器中使用 `cmd /c` 包裹 `npx`
 - 检查 Node.js 是否已添加到 PATH
+

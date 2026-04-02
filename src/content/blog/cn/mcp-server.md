@@ -276,3 +276,4 @@ QVERIS_API_KEY=your-api-key
 - [快速开始](getting-started.md)
 - [REST API 文档](rest-api.md)
 - [IDE / CLI 配置指南](ide-cli-setup.md)
+

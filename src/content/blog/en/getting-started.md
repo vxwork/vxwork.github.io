@@ -227,7 +227,7 @@ Returns the same schema as `/search` — full capability details including param
 
 `POST /tools/execute?tool_id={tool_id}`
 
-**cURL** (call the capability returned by Discover)
+**cURL** (call the capability returned by Discover results)
 
 ```bash
 curl -sS -X POST "https://qveris.ai/api/v1/tools/execute?tool_id=openweathermap.weather.execute.v1" \
@@ -326,3 +326,4 @@ QVeris's core engine is a managed service. All client-side tooling (MCP server, 
 - **ClawHub skills**: [clawhub.ai/skills?q=qveris](https://clawhub.ai/skills?sort=downloads&q=qveris)
 - **npm packages**: [@qverisai](https://www.npmjs.com/org/qverisai)
 - **Upstream contributions**: [openclaw/openclaw](https://github.com/openclaw/openclaw), [openclaw/clawhub](https://github.com/openclaw/clawhub)
+
