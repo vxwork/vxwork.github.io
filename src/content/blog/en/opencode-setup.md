@@ -4,7 +4,6 @@ description: 'Configuration Guide for OpenCode'
 pubDate: 'Jul 15 2026'
 heroImage: '../../../assets/blog-placeholder-about.jpg'
 ---
-# Configuration Guide for OpenCode
 
 This guide explains how to configure the QVeris MCP server and skills in [OpenCode](https://opencode.ai/) at the user level.
 

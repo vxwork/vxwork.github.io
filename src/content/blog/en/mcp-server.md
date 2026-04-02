@@ -5,7 +5,6 @@ pubDate: 'Jul 15 2026'
 heroImage: '../../../assets/blog-placeholder-about.jpg'
 ---
 
-# QVeris MCP Server Documentation
 
 ## What it is
 

@@ -4,7 +4,6 @@ description: 'IDE 与 CLI 配置指南'
 pubDate: 'Jul 15 2026'
 heroImage: '../../../assets/blog-placeholder-about.jpg'
 ---
-# IDE 与 CLI 配置指南
 
 QVeris 已集成到多种 IDE 和 CLI 编程工具中。通过自动配置 QVeris MCP 和技能/规则，可以大幅简化基于 QVeris API 和工具的应用开发。
 

@@ -4,7 +4,6 @@ description: 'QVeris 文档'
 pubDate: 'Jul 15 2026'
 heroImage: '../../../assets/blog-placeholder-about.jpg'
 ---
-# QVeris 文档
 
 ## 什么是 QVeris
 

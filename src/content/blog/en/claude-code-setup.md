@@ -4,7 +4,6 @@ description: 'Configuration Guide for Claude Code'
 pubDate: 'Jul 15 2026'
 heroImage: '../../../assets/blog-placeholder-about.jpg'
 ---
-# Configuration Guide for Claude Code
 
 This guide explains how to configure QVeris MCP server and skills in Claude Code at the user level.
 

@@ -4,7 +4,6 @@ description: 'QVeris REST API 文档'
 pubDate: 'Jul 15 2026'
 heroImage: '../../../assets/blog-placeholder-about.jpg'
 ---
-# QVeris REST API 文档
 
 版本：0.1.9
 

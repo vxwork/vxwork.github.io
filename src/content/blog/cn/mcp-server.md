@@ -4,7 +4,6 @@ description: 'QVeris MCP 服务器文档'
 pubDate: 'Jul 15 2026'
 heroImage: '../../../assets/blog-placeholder-about.jpg'
 ---
-# QVeris MCP 服务器文档
 
 ## 简介
 

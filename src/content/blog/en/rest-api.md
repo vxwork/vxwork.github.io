@@ -5,7 +5,6 @@ pubDate: 'Jul 15 2026'
 heroImage: '../../../assets/blog-placeholder-about.jpg'
 ---
 
-# QVeris REST API Documentation
 
 Version: 0.1.9
 

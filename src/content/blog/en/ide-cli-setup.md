@@ -4,7 +4,6 @@ description: 'IDE and CLI Configuration Guide'
 pubDate: 'Jul 15 2026'
 heroImage: '../../../assets/blog-placeholder-about.jpg'
 ---
-# IDE and CLI Configuration Guide
 
 QVeris has integration in various IDEs and CLI coding tools. They can ease the development of applications using QVeris's APIs and tools by setting up QVeris MCP and skill/rule automatically.
 
