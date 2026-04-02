@@ -6,6 +6,10 @@ pnpm create astro@latest -- --template blog
 
 > 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
+## Blog 写作规范（本仓库约定）
+
+见 `docs/blog-authoring.md`。
+
 Features:
 
 - ✅ Minimal styling (make it your own!)
